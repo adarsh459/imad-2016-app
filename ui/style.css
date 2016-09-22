@@ -1,22 +1,181 @@
-body {
-    font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+@import url('//fonts.googleapis.com/css?family=Lato:400');
+*, *:before, *:after {
+  box-sizing: border-box;
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-
-.center {
-    text-align: center;
+body, html {
+  height: 100%;
+  background: url("https://lh4.googleusercontent.com/-b65_YEujdhY/T52ry34XssI/AAAAAAAAh5c/SIQoLj2hAzQ/s1920-w1920-h1080-c/final%2Bcopy%2BSecond%2BBeach.jpg") center center fixed;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #6D6D6D;
 }
-
-.text-big {
-    font-size: 300%;
+div.poloroid
+{
+	position: absolute;
+	background: #fff;
+	width: 190px;
+	height: 230px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 6px rgba(100, 89, 89, 0.34);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
-
-.bold {
-    font-weight: bold;
+div.poloroid:hover
+{
+	transform: translate(-50%,-50%) scale(1.09);
+	box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.87);
 }
-
-.img-medium {
-    height: 200px;
+.poloroid .img
+{
+	background: url("IMG_3920323728697.jpg");
+  background-size: 280px;
+  background-position: -56px 0px;
+  height: 214px;
+  width: 175px;
+  cursor: pointer;
+  margin: 8px 0 8px 8px;
 }
-
+.poloroid div.name
+{
+	cursor: pointer;
+	position: absolute;
+	width: 190px;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.9);
+	text-align: center;
+	font-size: 20px;
+	transform: translateY(-13%);
+	transition:all 0.4s ease-out;
+}
+.poloroid div.name.up
+{
+	transform: translateY(-97%);
+}
+.poloroid div.name .details .bottom
+{
+  position: relative;
+  color: #000;
+  margin-top:53px;
+  width: 100%;
+  padding: 0px 10px 10px 10px;
+  font-size: 10px;
+  line-height: 20px;
+}
+.poloroid div.name .details .geo
+{
+  position:relative;
+  width:100%;
+  line-height: 20px; 
+  margin-top:20px;
+  color:#228CD9;
+  font-size:20px;
+}
+.poloroid div.name .details .geo:before
+{
+  content:"\f041";
+  font-family:FontAwesome;
+  color: #228CD9;
+  font-size:20px;
+}
+.poloroid div.name div
+{
+	cursor: pointer;
+	line-height: 25px;
+	font-style: normal;
+}
+.poloroid div.name div.details
+{
+	line-height: 20px;
+  padding: 0 10px 0 10px;
+	font-size: 15px;
+}
+footer {
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 10px;
+  height: 40px;
+  font-size: 13px;
+  line-height: 40px;
+  color: #999;
+  background: rgba(0,0,0,0.2);
+  z-index: 300;
+}
+.fa
+{
+  line-height: 40px;
+  font-size: 20px;
+}
+li
+{
+  list-style: none;
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+li > a
+{
+  background: transparent;
+  width: 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  transition:0.3s ease-out;
+}
+li:nth-child(1) > a
+{
+  color: rgba(234, 76, 137, 0.8);
+}
+li:nth-child(1) > a:hover
+{
+  color: #fff;
+  background: linear-gradient(to bottom, #E5709D 0%, #CA3871 100%);
+}
+li:nth-child(2) > a
+{
+  color: rgba(48, 92, 153, 0.8);
+}
+li:nth-child(2) > a:hover
+{
+  color: #fff;
+  background: linear-gradient(to bottom, #4477cc 0%, #2f5fae 100%);
+}
+li:nth-child(3) > a
+{
+  color: #00cdff;
+}
+li:nth-child(3) > a:hover
+{
+  color: #fff;
+  background: linear-gradient(to bottom, #00ccff 0%, #00a3cc 100%);
+}
+li:nth-child(4) > a
+{
+  color: #252527;
+}
+li:nth-child(4) > a:hover
+{
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#505050), to(#383838));
+  background: -webkit-linear-gradient(#505050, #383838);
+  background: linear-gradient(#505050, #383838);
+}
